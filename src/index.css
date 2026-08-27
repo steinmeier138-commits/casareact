@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d10024;
+  --color-secondary: #1e1f29;
+}
+
+.tab:hover .tab-b {
+  width: 100%;
+  color: #d10024;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabb:hover .tab-b {
+  width: 100%;
+  color: #d10024;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab:hover p {
+  color: #d10024;
+  transition: all 0.3s ease-in-out;
+}
+
+.catProd:hover img {
+  scale: 110%;
+  transition: all 0.3s ease-in-out;
+}
+
+.catProd img {
+  width: 18rem;
+}
+
+/* CARD */
+.fullcard {
+  position: relative;
+}
+
+/* Dark ADD TO CART section */
+.addtocart {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Show dark section when card is hovered */
+.fullcard:hover .addtocart {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ADD TO CART button */
+.addtocartbtn {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Show button when card is hovered */
+.fullcard:hover .addtocartbtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cart icon */
+.carticon {
+  transition: all 0.3s ease-in-out;
+}
+
+/* When hovering ADD TO CART button,
+   cart icon comes in from the left */
+.addtocartbtn:hover .carticon {
+  transform: translateY(-50%) translateX(0);
+  opacity: 1;
+}
